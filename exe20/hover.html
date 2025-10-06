@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style> 
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    div > p {
+        display: none;
+    }
+    
+    div:hover > p {
+        display: block;
+        color: rgb(15, 238, 134);
+        width:auto ;
+        text-align: center;
+    }
+
+    div:hover { 
+        color: red;
+        text-align: center;
+        font-size: 1em;
+        
+    }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse abaixo para ver um efeito legal</p>
+    <div>
+        passe o mouse aqui 
+        <p>secret text </p> 
+    </div>
+
+    
+</body>
+</html>

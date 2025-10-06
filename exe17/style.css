@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* Estilo para o exercício de fontes */
+        body { 
+            background: ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif 
+
+        }
+        h1, h2 {
+            font-family: Arial, Helvetica, sans-serif; 
+
+
+
+            /* lighter normal bold bolder --> 100 - 900 */
+        }
+/* LEMBRE-SE
+
+            Medidas Absolutas: 
+
+	        m, mm, in, px, pt, pc
+
+        Medidas Relativas:
+            
+	em	->	relativo ao tamanho natural da fonte
+	ex	->	relativo a altura x da fonte
+	rem	->	tipo em, mas relativo a fonte configurada no body
+	vw	->	relativo a largura da view port
+	vh	->	relativo a altura da view port
+	%	->	porcentagem
+
+Recomendação w3c:  "px" ou "em"
+
+Altura padrão:  16px ou 1em
+
+Simplificando com SHORTHAND FONT
+
+      -- font style -- > font weight --> font size --> font family --
+
+         font: italic bold 1em arial Helvetica, sans-serif;
+
+*/ 

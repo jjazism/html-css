@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links </title>
+    <style> 
+
+    /* SELETORES PERSONALIZADOS 
+
+        #  = ID
+        .  = CLASS
+        :  = PSEUDO-CLASS
+        :: = PSEUDO-ELEMENT
+        >  = FILHO DIRETO ( clildren)
+        *  = TODOS ( universal)
+
+    */
+    
+    body { 
+        font-family: 'Courier New', Courier, monospace;
+        background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: darkblue;
+      font-size: 1.2em;
+    }
+
+    a:hover{
+      color: bisque;
+      background-color: cadetblue;
+    }
+
+    a::after {
+      content: " (abre em nova aba)";
+      font-size: 0.8em;
+      color: gray;
+      
+    }
+
+    .premium {
+      color: rgb(153, 43, 148);
+      text-shadow: 0 0 1px orange;
+      text-decoration: underline;
+    }
+
+
+  </style>
+</head>
+<body>
+    <h1>Alguns Links</h1>
+    <ul>
+        <li><a href="https://x.com/jjazi7" target="_blank" class="premium">Twitter</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+        <li><a href="https://www.twitch.tv/rdofps" target="_blank">Twitch</a></li>
+    </ul>
+    
+</body>
+</html>
