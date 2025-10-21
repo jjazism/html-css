@@ -6,18 +6,59 @@
     <title>Posicionamento</title>
 </head>
 <style> 
-  body {
-    height: 98vh;
-    border: 1px dashed black;
-    background-image: 
-    url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png') ;
-    background-position: center center ;
-    background-size: 100px;
-    background-repeat: no-repeat;
-  }
-    
+body {
+  position: relative;
+  height: 98vh;
+  border: 2px solid black;
+  margin: 0;
+}
+
+.mascote {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url(imagens/mascote.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Posicionamento */
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+
 </style>
 
 <body> 
+  <div class="mascote top-left"></div>
+  <div class="mascote top-right"></div>
+  <div class="mascote center"></div>
+  <div class="mascote bottom-left"></div>
+  <div class="mascote bottom-right"></div>
+
 </body>
 </html>
