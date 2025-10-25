@@ -110,3 +110,16 @@
         background-image: url(/background002.jpg);
        
     }
+
+
+    footer {
+        background-color: black;
+        padding: 10px;
+        color: aqua;
+        text-align: center;
+
+    }
+
+    footer a {
+        text-decoration: none;
+    }
