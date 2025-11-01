@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    td, th {
+        border: 1px black solid;
+        padding: 10px;
+    }
+
+    table {
+        width: 500px;
+        border-collapse: collapse;
+    }
+
+    th {
+        background-color: gray;
+        color: white;
+    }
+
+    td {
+        background-color: green;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+    }
+
+
+    .numero {
+        font-family: 'Courier New', Courier, monospace;
+        text-align: right;
+        background-color: rgb(155, 155, 81);
+    }
+
+    .abv {
+        background-color: bisque;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+
+    tfoot {
+    background-color: aqua;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       
+     
+    }
+</style>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES 
+            TABLE
+                THEAD
+                    TR, TD, TH
+
+                TBODY
+                    TR, TD, TH
+                
+                TFOOT
+                    TR, TD, TH
+    -->
+    
+    <table>
+        <thead>
+            <th>Estado </th>
+            <th>População </th>
+            <th>Abreviação </th>
+        </thead>
+
+        <tbody>
+          <tr>
+                <td>Brasília</td>
+                <td class="numero">190238</td>
+                <TD class="abv">BSB</TD>
+          </tr>
+
+          <tr>
+            <td>São Paulo</td>
+            <td class="numero">123123</td>
+            <td class="abv"> SP</td>
+          </tr>
+
+          <tr>
+            <td>Rio de Janeiro</td>
+            <td class ="numero">232314</td>
+            <td class="abv">RJ</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Estados Unidos</td>
+            <td class="numero">213123123</td>
+            <td class="abv">USA</td>
+          </tr>
+        </tbody>
+        
+        <tfoot> 
+            <th>Total de Estados</th>  
+            <th>Total de População</th>
+            <th>---</th>
+            <tr class="pe">
+                <td>5</td>
+                <td class="numero">9999999</td>
+                <td>ANY</td>
+            </tr>   
+        </tfoot>
+    </table>
+</body>
+</html>
