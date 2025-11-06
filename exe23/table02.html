@@ -18,6 +18,7 @@
     table {
         width: 800px;
         border-collapse: collapse;
+        position: relative;
     }
 
     caption {
@@ -43,6 +44,16 @@
         background-color: yellow;
     }
 
+    thead {
+        background-color: gray;
+        color: white;
+    }
+
+    thead tr th {
+        position: sticky;
+        background-color: gray;
+        top: -1px;
+    }
 
     thead th.pop {
         width: 200px
@@ -108,15 +119,39 @@
         TITULO DA LINHA = SCOPE="ROW"
     
     -->
+
+    <!-- 
+      Quando temos uma tabela com muitos dados, com muitas colunas e principalmente com muitas linhas, conforme vamos descendo é natural que o cabeçalho fique para cima e "suma", e é nessa hora que algumas vezes acabamos nos perdendo na leitura da tabela, visto que esquecemos aquilo que determinadas colunas querem dizer 
+
+  Um cabeçalho fixo pode solucionar esse problema, visto que conforme vamos scrollando a tabela, o cabeçalho se mantem fixo no topo, mantendo os títulos das colunas sempre visíveis. 
+
+  Para fazer isso, devemos abrir um seletor para a área da cabeça da nossa tabela (thead), que é onde estão as células de título que constituem o nosso cabeçalho... E dentro desse seletor, declarar a propriedade " position " com o valor " sticky ". Após isso é necessário usar uma propriedade auxiliar do position, o " top "... E como não queremos mudar de lugar o nosso cabeçalho e sim apenas ativar o "sticky", você deve inserir nessa propriedade auxiliar o valor " -1px ", colando o cabeçalho na posição "zero".
+
+  Exemplo do código:
+
+  thead { 
+    position: sticky;
+    top: -1px;
+  }
+
+  Um ponto positivo é que se em baixo da sua tabela você tiver mais conteúdo, conforme você vai scrollando, o cabeçalho que está fixo na tabela se limita fixo apenas dentro dessa tabela, ele não ficará   por cima do resto do seu conteúdo.
+
+  Observação: Essa técnica do cabeçalho fixo não está funcionando perfeitamente em todos os navegadores, então use esse recurso com moderação.
+
+-->
+  
     <table>
 
         <caption>
             População das unidades federativas kiiri
         </caption>
+
         <thead>
+          <tr> 
             <th scope="col" class="est">Estado </th>
             <th scope="col" class="pop">População </th>
             <th scope="col">Abreviação </th>
+          </tr>
         </thead>
 
         <tbody>
@@ -136,6 +171,120 @@
             <td>Rio de Janeiro</td>
             <td class ="numero">232314</td>
             <td class="abv">RJ</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
+          </tr>
+
+          <tr>
+            <td>Belo Horizonte</td>
+            <td class="numero">1231233</td>
+            <td class="abv">BH</td>
           </tr>
 
           <tr>
@@ -174,6 +323,7 @@
 
         
     </table>
+
 </body>
 </html>
 
