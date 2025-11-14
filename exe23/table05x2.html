@@ -40,6 +40,10 @@
         background-color: burlywood;
         text-decoration:underline
     }
+
+    tfoot th{
+        background-color: rgb(144, 133, 206);
+    }
 </style>
 <body>
     <h1>exercicio de tabelas</h1>
@@ -51,15 +55,15 @@
 
     <thead >
         <tr>
-            <th>Grupos</th>
-            <th>Nomes</th>
-            <th colspan="3">Filmes</th>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
         </tr>
     </thead>
 
     <tbody>
         <tr>
-            <th class="M" rowspan="4">Mulheres</th>
+            <th class="M" rowspan="4" scope="rowgroup">Mulheres</th>
                 <td>Ana</td>
                 <td>Vingadores</td>
                 <td>interestelar</td>
@@ -88,7 +92,7 @@
         </tr>
 
         <tr>
-            <th class="H" rowspan="4">Homens</th>
+            <th class="H" rowspan="4" scope="rowgroup">Homens</th>
             <td>Bruno</td>
             <td>Vingadores</td>
             <td>interestelar</td>
@@ -108,6 +112,11 @@
             <td>interestelar</td>
             <td>scoob-doo</td>
         </tr>
+
+        <tfoot>
+            <th colspan="4" scope="row">xesq</th>
+            <td>dele</td>
+        </tfoot>
         
     </tbody>
 
