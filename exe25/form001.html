@@ -15,12 +15,12 @@
 <body>
     <h1>my first formulário</h1>
 
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="inome">nome: </label>
             <input type="text" name="nome" id="inome">
         </p>
-
+        
         <p>
             <label for="isobrenome">sobrenome: </label>
             <input type="text" name="sobrenome" id="isobrenome">
@@ -30,6 +30,16 @@
             <input type="submit" value="enviar">
         </p>
     </form>
+
+    /* Metodos Get / Post 
+
+    method post = dados sensiveis ( senhas, fotos , dados pessoais) /  dados maiores que 3000bites ( +3000 letras) / formulario envia arquivos
+
+    method get = dados simples ( nome, altura, peso ) / dados menores que 3000bites ( -3000 letras ) / formulario nao enviar arquivos 
+
+    https no futuro p criptografar url
+    
+
     
 </body>
 </html>
