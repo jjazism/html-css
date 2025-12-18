@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms // 2</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:large;
+    }
+</style>
+<body>
+
+    <form action="cadastro.php" autocomplete="on" method="post">
+    <p>
+        <label for="isu"> Usuario :    </label>
+        <input type="text" name="usu" id="isu" autocomplete="username" minlength="8" maxlength="15" size="20" placeholder="username">
+    </p>
+
+    <p>
+        <label for="isenha"> Senha :</label>
+        <input type="password" name="senha" id="isenha" autocomplete="current-password" minlength="5" maxlength="15" size="15" placeholder="password">
+    </p> 
+    
+    <p>
+        <input type="submit" value="enviar">
+        <input type="reset" value="resetar">
+    </p>
+
+
+
+</form>
+    
+</body>
+</html>
