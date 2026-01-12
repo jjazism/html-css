@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Estilos padrão para todos os dispositivos */
+                                /* Estilos padrão para todos os dispositivos */
 
 * {
     margin: 0px;
@@ -8,8 +8,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html,
-body {
+html, body {
     width: 100vw;
     height: 100vh;
     background-color: #233eff;
@@ -23,6 +22,8 @@ h1 {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
 }
 
+                                /* Estilos para aparelho em modo paisagem (landscape) */
+
 @media screen and (orientation: landscape) {
     body {
         background-image: url(../imagens/cev-landscape.jpg);
@@ -30,6 +31,7 @@ h1 {
     }
 
 }
+                                /* Estilos para aparelho em modo retrato (portrait) */
 
 @media screen and (orientation: portrait) {
     body {
