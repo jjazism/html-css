@@ -1,3 +1,92 @@
 @charset "UTF-8";
 
 /* Todas as demais midias */
+
+/* Typical Device Breakpoints 
+--------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablets: de 768px até 992pxpx
+Desktops: de 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    body { 
+        background-image: url(../imagens/back-print.jpg);  /* Desnecessário */
+    }
+    
+
+    main{
+        border: 2px solid black;
+        text-align: center;
+    }
+    main h1 {
+        color:black;
+        text-shadow: none;
+    }
+
+    main::after{
+        content: 'vaitomandodosmenorquitemodio';
+        text-decoration: overline;
+    }
+
+    img#PC { display: none;}
+    img#Tablet { display: none;}
+    img#Phone { display:none;}
+    img#print { display: block;}
+    img#TV { display: none;}
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1300px) /* Tablets */ {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+        
+    }
+
+    img#PC { display: none;}
+    img#Tablet { display: block;}
+    img#Phone { display:none;}
+    img#print { display: none;}
+    img#TV { display: none;}
+}
+    
+@media screen and (min-width:1300px) and(max-width:1200px) /* Desktops */ {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    
+    img#PC { display: block;}
+    img#Tablet { display: none;}
+    img#Phone { display:none;}
+    img#print { display: none;}
+    img#TV { display: none;}    
+
+}
+
+@media screen and (min-width:1200px) /* Large Screens */
+{  
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    
+    }
+
+    main {
+        width: 90vw;
+    }
+
+    img#PC { display: none;}
+    img#Tablet { display: none;}
+    img#Phone { display:none;}
+    img#print { display: none;}
+    img#TV { display: block;} 
+}
+    
+        
+    
