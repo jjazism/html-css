@@ -1,0 +1,16 @@
+Display: ativa o flexbox no elemento pai
+Flex-direction: direção dos itens
+Flex-wrap: controla a quebra de itens
+Flex-flow: shorthand para flex-direction + flex-wrap
+Justify-content: alinhamento eixo principal
+Align-items: alinhamento eixo cruzado
+Align-content: trata alinhamento quando há quebra (só entra em uso quando o flex-wrap estiver ativado)
+
+PROPRIEDADES ITENS:
+
+Order: ordem de exibição dos itens
+Flex-grow: item crescer com espaço sobrando
+Flex-shrink: item encolher com espaço sobrando
+Flex-basis: tamanho inicial do item antes de crescer/encolher
+Flex: shorthand para flex-grow, flex-shrink e flex-basis
+Align-self: alinhamento individual no eixo cruzado
