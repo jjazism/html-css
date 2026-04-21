@@ -12,9 +12,15 @@ body {
     line-height: 1.5em;
 }
 
-p, h1, h2 {
+p {
     margin-bottom: 15px;
-    text-align: justify;
+    line-height: 1.5em;
+}
+
+h1 , h2 {
+    line-height: 1.2em;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 header, section.normal {
@@ -22,15 +28,48 @@ header, section.normal {
 }
 
 
-div.media {
-    background-color: yellow;  /*CONTEUDO IMG/IFRAME DESTACADO COM BACKGROUND AMARELO */
-}
-
-div.text    {
-    background-color: purple; /*CONTEUDO TEXT DESTACADO COM BACKGROUND PURPLE */
-}
-
 section.flex-content{
 padding: 20px;
-background-color:aqua          /*CONTEUDO SECTION DESTACADO COM BACKGROUND CIANO */
+background-color:rgba(103, 117, 114, 0.514);    /*CONTEUDO SECTION DESTACADO COM BACKGROUND CIANO */
+
+display: flex;
+flex-flow: column nowrap;
 }
+
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article > div.text {
+    flex: 1 1 500px;
+
+    padding: 8px;
+
+    
+}
+
+article div.media {
+    flex: 1 0 500px;
+
+    padding: 8px;
+    
+}
+
+div.media img {
+    display: block;
+
+    margin: auto;
+}
+
+div.media iframe {
+    display: block;
+
+    margin: auto;
+}
+
