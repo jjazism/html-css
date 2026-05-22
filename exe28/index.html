@@ -13,7 +13,13 @@
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto;
-        gap:5px
+        gap:5px;
+
+        align-items: center; /* alinha os itens no centro do grid, verticalmente */
+        justify-items: center; /* alinha os itens no centro do grid, horizontalmente */
+
+        align-content: normal; /* alinha o conteúdo do grid, ou seja, o conjunto de itens, dentro do container, verticalmente */
+        justify-content: normal ; /* alinha o conteúdo do grid, ou seja, o conjunto de itens, dentro do container, horizontalmente */
     }
 
     div.item {
