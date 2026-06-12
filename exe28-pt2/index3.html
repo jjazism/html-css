@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zzz</title>
+</head>
+<style>
+    div.conteiner{
+        border:1px solid black;
+        width: 1800px;
+        padding: 2px;
+
+        display: grid;
+        grid-template-columns: 2fr 4fr 6fr; /* short-hand para grid-template-columns */
+        grid-template-rows: repeat(3, 100px); /* short-hand para grid-template-rows */
+
+        place-items: stretch stretch; /* short-hand para align-items e justify-items */
+        place-content: stretch; /* short-hand para align-content e justify-content */
+
+
+
+    }
+
+    div.item{
+        background-color: rgb(0, 255, 179);
+        border:1px solid black;
+
+        padding:4px;
+    }
+</style>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+    </div>
+    
+    
+</body>
+</html>
