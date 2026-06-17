@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-templates</title>
+</head>
+<style>
+    .container{
+        border:2px solid rgb(0, 0, 0);
+
+        display: grid;
+
+        width: 100%;
+
+        grid-template-columns: repeat(3, 400px);
+        grid-template-rows: repeat(3, 200px);
+
+        grid-auto-columns: 400px;
+        grid-auto-rows: 200px;
+
+        grid-auto-flow:column; /* define a direção do preenchimento automático dos itens, ou seja, os itens que não foram posicionados manualmente, ou seja, os itens que não tiveram a posição definida por meio das propriedades grid-column-start, grid-column-end, grid-row-start e grid-row-end */
+
+        gap: 3px;
+
+        place-items: normal normal;
+        place-content: space-evenly space-evenly;
+    }
+
+    .item {
+        border:1px solid rgb(0, 0, 0);
+        background-color: rgb(0, 204, 255);
+        padding: 4px;
+        
+
+        text-align: center;
+    }
+    </style>
+<body>
+    <div class="container">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+        <div class="item">g</div>
+        <div class="item">h</div>
+        <div class="item">i</div>
+        <div class="item">j</div>
+    </div>
+    
+</body>
+</html>
